@@ -1,0 +1,129 @@
+
+body {
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.todo-app {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    width: 90%;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 40px;
+}
+
+.todo-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.todo-button {
+    background-color: #0078d7;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.todo-button:hover {
+    background-color: #005bb5;
+}
+
+.todo-input[placeholder] {
+    aria-label: "Neue Aufgabe hinzufügen";
+}
+
+.todo-button[aria-label] {
+    aria-label: "Aufgabe hinzufügen";
+}
+
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list li {
+    display: flex;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.todo-list li input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-list li span {
+    font-size: 1rem;
+}
+
+.todo-list li input[type="checkbox"]:checked + span {
+    text-decoration: line-through;
+}
+
+.todo-list li button {
+    background-color: #d9534f;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+}
+
+.todo-list li button:hover {
+    background-color: #c9302c;
+}
+
+.todo-list li input[type="checkbox"][aria-label] {
+    aria-label: "Aufgabe erledigen";
+}
+
+.todo-list li button[aria-label] {
+    aria-label: "Aufgabe löschen";
+}
+
+
+.todo-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 20px;
+}
+
